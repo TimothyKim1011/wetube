@@ -1,0 +1,21 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "Youtube clone app",
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/TimothyKim1011/wetube.git)"
+  },
+  "scripts": {
+    "win": "node index.js"
+  },
+  "author": "Tim Kim",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.15",
+    "@babel/preset-env": "^7.22.15"
+  }
+}

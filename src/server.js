@@ -1,6 +1,6 @@
 import express from "express";
 import morgan from "morgan";
-import globalRouter from "./routers/globalRouter";
+import rootRouter from "./routers/rootRouter";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 
@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true })); // translate se6 -> javascript 
 
 // 누군가 app.use 링크에 접근한다면, 라우터로 안내되어지고, 링크를 get하게 된다.
 // .use는 중간경로, .get은 최종경로
-app.use("/", globalRouter);
+app.use("/", rootRouter);
 app.use("/videos", videoRouter);
 app.use("/users", userRouter);
 
